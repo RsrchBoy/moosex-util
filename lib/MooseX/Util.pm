@@ -1,6 +1,6 @@
 package MooseX::Util;
 
-# ABSTRACT: The great new MooseX::Util!
+# ABSTRACT: Moose::Util extensions
 
 use strict;
 use warnings;
