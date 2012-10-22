@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 use Test::More;
-use Test::Moose::More;
+use Test::Moose::More 0.016;
 
 use Test::Requires 'Reindeer';
 
