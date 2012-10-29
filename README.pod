@@ -6,11 +6,11 @@
 
 =head1 NAME
 
-MooseX::Util - The great new MooseX::Util!
+MooseX::Util - Moose::Util extensions
 
 =head1 VERSION
 
-This document describes version 0.001 of MooseX::Util - released October 21, 2012 as part of MooseX-Util.
+This document describes version 0.001 of MooseX::Util - released October 29, 2012 as part of MooseX-Util.
 
 =head1 SYNOPSIS
 
@@ -27,10 +27,12 @@ read the documentation of that module for a comprehensive view.
 
 However.
 
-We've reimplemented a number of the funtions our parent provides, for a
+We've reimplemented a number of the functions our parent provides, for a
 variety of reasons.  Those functions are documented here.
 
-=function with_traits(<classname> => (<trait1>, ... )
+=head1 FUNCTIONS
+
+=head2 with_traits(<classname> => (<trait1>, ... )
 
 Given a class and one or more traits, we construct an anonymous class that is
 a subclass of the given class and consumes the traits given.  This is exactly

@@ -1,3 +1,11 @@
 Revision history for MooseX-Util
 
 {{$NEXT}}
+
+0.001     2012-10-29 11:20:28 PST8PDT
+	* Initial release
+	* we only override with_traits() at this point (in MX::Utils), in order to
+	  use our slightly nicer set of anonymous role name picking
+	* also includes MooseX::Traitor, and the various meta-bits needed to do
+	  the above.  Traitor aims to be a MX::Traits alternate, but right now
+	  it's pretty limited.
