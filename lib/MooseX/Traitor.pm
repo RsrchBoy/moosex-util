@@ -37,6 +37,8 @@ sub with_traits {
 !!42;
 __END__
 
+=for stopwords composable CLOS behaviour behaviours
+
 =head1 SYNOPSIS
 
     # in your class definition...
