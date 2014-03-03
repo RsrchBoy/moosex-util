@@ -1,7 +1,5 @@
 Revision history for MooseX-Util
 
-{{$NEXT}}
-
 0.002     2014-03-03 12:17:31 PST-0800
 	* Drop Reindeer as a prereq (oops)
 	* Add a cpanfile

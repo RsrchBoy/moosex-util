@@ -1,5 +1,17 @@
+#
+# This file is part of MooseX-Util
+#
+# This software is Copyright (c) 2012 by Chris Weyl.
+#
+# This is free software, licensed under:
+#
+#   The GNU Lesser General Public License, Version 2.1, February 1999
+#
 package MooseX::TraitFor::Moose::Meta::Class::BetterAnonClassNames;
-
+BEGIN {
+  $MooseX::TraitFor::Moose::Meta::Class::BetterAnonClassNames::AUTHORITY = 'cpan:RSRCHBOY';
+}
+$MooseX::TraitFor::Moose::Meta::Class::BetterAnonClassNames::VERSION = '0.002';
 # ABSTRACT: Metaclass trait
 
 use Moose::Role;
@@ -108,3 +120,59 @@ around create_anon_class => sub {
 };
 
 !!42;
+
+__END__
+
+=pod
+
+=encoding UTF-8
+
+=for :stopwords Chris Weyl
+
+=head1 NAME
+
+MooseX::TraitFor::Moose::Meta::Class::BetterAnonClassNames - Metaclass trait
+
+=head1 VERSION
+
+This document describes version 0.002 of MooseX::TraitFor::Moose::Meta::Class::BetterAnonClassNames - released March 03, 2014 as part of MooseX-Util.
+
+=head1 SEE ALSO
+
+Please see those modules/websites for more information related to this module.
+
+=over 4
+
+=item *
+
+L<MooseX::Util|MooseX::Util>
+
+=back
+
+=head1 SOURCE
+
+The development version is on github at L<http://github.com/RsrchBoy/moosex-util>
+and may be cloned from L<git://github.com/RsrchBoy/moosex-util.git>
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+https://github.com/RsrchBoy/moosex-util/issues
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
+
+=head1 AUTHOR
+
+Chris Weyl <cweyl@alumni.drew.edu>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2012 by Chris Weyl.
+
+This is free software, licensed under:
+
+  The GNU Lesser General Public License, Version 2.1, February 1999
+
+=cut
