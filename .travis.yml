@@ -1,5 +1,6 @@
 language: perl
 perl:
+   - "5.18"
    - "5.16"
    - "5.14"
    - "5.12"
@@ -13,8 +14,7 @@ install:
    # echo "# Deal with all of the DZIL dependancies, quickly and quietly"
    # export PERL_CPANM_OPT='--metacpan --skip-satisfied'
    - export PERL_CPANM_OPT='--metacpan'
-   - rm -rf ~/.cpanm
-   - mkdir ~/.cpanm
+   - rm -rf ~/.cpanm && mkdir ~/.cpanm
    - sudo mount tmpfs -t tmpfs ~/.cpanm
    - export AUTOMATED_TESTING=1 HARNESS_OPTIONS=j10:c HARNESS_TIMER=1
    - cpanm --quiet Dist::Zilla Module::Metadata
