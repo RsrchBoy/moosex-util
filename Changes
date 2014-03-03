@@ -1,6 +1,9 @@
 Revision history for MooseX-Util
 
-{{$NEXT}}
+0.002     2014-03-03 11:39:33 PST-0800
+	* Drop Reindeer as a prereq (oops)
+	* Add a cpanfile
+	* Mark v5.10 as the, ah, maximum minimum version of Perl
 
 0.001     2012-10-29 11:20:28 PST8PDT
 	* Initial release
