@@ -3,10 +3,10 @@ requires "Moose::Meta::Class" => "0";
 requires "Moose::Role" => "0";
 requires "Moose::Util" => "0";
 requires "MooseX::AttributeShortcuts" => "0";
-requires "autobox::Core" => "0";
+requires "MooseX::TraitFor::Meta::Class::BetterAnonClassNames" => "0.002001";
 requires "namespace::autoclean" => "0";
 requires "parent" => "0";
-requires "perl" => "5.010";
+requires "perl" => "5.006";
 requires "strict" => "0";
 requires "warnings" => "0";
 
@@ -19,7 +19,7 @@ on 'test' => sub {
   requires "Test::More" => "0.94";
   requires "Test::Requires" => "0";
   requires "aliased" => "0";
-  requires "perl" => "5.010";
+  requires "perl" => "5.006";
 };
 
 on 'configure' => sub {

@@ -6,7 +6,7 @@ use Test::Moose::More 0.016;
 
 use Test::Requires 'Reindeer';
 
-use aliased 'MooseX::TraitFor::Moose::Meta::Class::BetterAnonClassNames'
+use aliased 'MooseX::TraitFor::Meta::Class::BetterAnonClassNames'
     => 'MetaTrait';
 use aliased 'MooseX::Util::Meta::Class'
     => 'MetaClass';

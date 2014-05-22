@@ -7,7 +7,7 @@ use namespace::autoclean;
 use MooseX::AttributeShortcuts;
 
 extends 'Moose::Meta::Class';
-with 'MooseX::TraitFor::Moose::Meta::Class::BetterAnonClassNames';
+with 'MooseX::TraitFor::Meta::Class::BetterAnonClassNames';
 
 # NOTE: making this package immutable breaks our metaclass compatibility!
 #__PACKAGE__->meta->make_immutable;
@@ -29,7 +29,7 @@ __END__
 =head1 DESCRIPTION
 
 This is a trivial extension of L<Moose::Meta::Class> that consumes the
-L<BetterAnonClassNames|MooseX::TraitFor::Moose::Meta::Class::BetterAnonClassNames>
+L<BetterAnonClassNames|MooseX::TraitFor::Meta::Class::BetterAnonClassNames>
 trait.
 
 =cut

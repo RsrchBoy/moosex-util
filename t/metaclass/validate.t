@@ -4,7 +4,7 @@ use warnings;
 use Test::More;
 use Test::Moose::More;
 
-use aliased 'MooseX::TraitFor::Moose::Meta::Class::BetterAnonClassNames'
+use aliased 'MooseX::TraitFor::Meta::Class::BetterAnonClassNames'
     => 'MetaTrait';
 use aliased 'MooseX::Util::Meta::Class'
     => 'MetaClass';
