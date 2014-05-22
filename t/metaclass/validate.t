@@ -14,7 +14,6 @@ validate_class MetaClass, (
     does => [ MetaTrait ],
     attributes => [
         is_anon => {
-            -isa     => [ qw{ Moose::Meta::Attribute } ],
             reader   => 'is_anon',
             init_arg => 'is_anon',
             isa      => 'Bool',
