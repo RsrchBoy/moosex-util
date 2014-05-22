@@ -2,6 +2,11 @@ Revision history for MooseX-Util
 
 {{$NEXT}}
 
+0.003     2014-05-22 12:30:56 PDT-0700
+	* MooseX::TraitFor::Meta::Class::BetterAnonClassNames has been split into
+	  its own dist, so let's require the first version of the module present
+	  in that dist (and drop it here, naturally).
+
 0.002     2014-03-03 12:17:31 PST-0800
 	* Drop Reindeer as a prereq (oops)
 	* Add a cpanfile
