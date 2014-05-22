@@ -14,6 +14,8 @@ with 'MooseX::TraitFor::Meta::Class::BetterAnonClassNames';
 !!42;
 __END__
 
+=for :stopwords BetterAnonClassNames
+
 =head1 SYNOPSIS
 
     # create a new type of Zombie catcher equipped with machete and car

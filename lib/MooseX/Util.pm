@@ -65,7 +65,7 @@ read the documentation of that module for a comprehensive view.
 
 However.
 
-We've reimplemented a number of the functions our parent provides, for a
+We've re-implemented a number of the functions our parent provides, for a
 variety of reasons.  Those functions are documented here.
 
 =head1 SEE ALSO
