@@ -9,7 +9,7 @@ use parent 'Moose::Util';
 
 use MooseX::Util::Meta::Class;
 
-=func with_traits(<classname> => (<trait1>, ... )
+=func with_traits(<classname> => (<trait1>, ... ))
 
 Given a class and one or more traits, we construct an anonymous class that is
 a subclass of the given class and consumes the traits given.  This is exactly
