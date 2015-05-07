@@ -7,6 +7,7 @@ use warnings;
 
 use parent 'Moose::Util';
 
+use Carp 'confess';
 use MooseX::Util::Meta::Class;
 
 =func with_traits(<classname> => (<trait1>, ... ))
@@ -46,6 +47,28 @@ sub with_traits {
     )->name;
 }
 
+=head2 is_private
+
+    # true if "private"
+    ... if is_private('_some_name');
+
+Ofttimes we need to determine if a name is considered "private" or not.  By convention,
+method, attribute, and other names are considered private if their first character is
+an underscore.
+
+While trivial to test for, this allows us to centralize the tests in one place.
+
+=cut
+
+sub is_private($) {
+    my ($name) = @_;
+
+    confess 'is_private() must be called with a name to test!'
+        unless $name;
+
+    return 1 if $name =~ /^_/;
+    return;
+}
 
 !!42;
 __END__
