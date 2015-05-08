@@ -1,6 +1,8 @@
 Revision history for MooseX-Util
 
 {{$NEXT}}
+
+0.004     2015-05-07 21:58:06 PDT-0700
 	* add: is_private()
 
 0.003     2014-05-22 12:30:56 PDT-0700
