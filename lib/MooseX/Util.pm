@@ -7,6 +7,35 @@ use warnings;
 
 use parent 'Moose::Util';
 
+use Sub::Exporter::Progressive -setup => {
+    exports => [
+        qw{
+            add_method_modifier
+            apply_all_roles
+            does_role
+            english_list
+            ensure_all_roles
+            find_meta
+            get_all_attribute_values
+            get_all_init_args
+            is_role
+            meta_attribute_alias
+            meta_class_alias
+            resolve_metaclass_alias
+            resolve_metatrait_alias
+            search_class_by_role
+            throw_exception
+            with_traits
+        },
+
+        # and our own...
+        qw{
+            is_private
+        },
+    ],
+    groups => { default => [ ':all' ] },
+};
+
 use Carp 'confess';
 use MooseX::Util::Meta::Class;
 
