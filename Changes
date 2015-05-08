@@ -1,6 +1,7 @@
 Revision history for MooseX-Util
 
 {{$NEXT}}
+	* add: is_private()
 
 0.003     2014-05-22 12:30:56 PDT-0700
 	* MooseX::TraitFor::Meta::Class::BetterAnonClassNames has been split into

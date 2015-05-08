@@ -1,10 +1,14 @@
+[![Build Status](https://travis-ci.org/RsrchBoy/moosex-util.svg?branch=master)](https://travis-ci.org/RsrchBoy/moosex-util)
+[![Kwalitee status](http://cpants.cpanauthors.org/dist/MooseX-Util.png)](http://cpants.charsbar.org/dist/overview/MooseX-Util)
+[![Coverage Status](https://coveralls.io/repos/RsrchBoy/moosex-util/badge.png?branch=master)](https://coveralls.io/r/RsrchBoy/moosex-util?branch=master)
+
 # NAME
 
 MooseX::Util - Moose::Util extensions
 
 # VERSION
 
-This document describes version 0.003 of MooseX::Util - released May 22, 2014 as part of MooseX-Util.
+This document describes version 0.004 of MooseX::Util - released May 07, 2015 as part of MooseX-Util.
 
 # SYNOPSIS
 
@@ -26,7 +30,7 @@ variety of reasons.  Those functions are documented here.
 
 # FUNCTIONS
 
-## with\_traits(<classname> => (<trait1>, ... )
+## with\_traits(<classname> => (<trait1>, ... ))
 
 Given a class and one or more traits, we construct an anonymous class that is
 a subclass of the given class and consumes the traits given.  This is exactly
@@ -49,16 +53,22 @@ Rather than:
 This is nice because we have an idea of where the first anonymous class came
 from, whereas the second one could could be from anywhere.
 
+## is\_private
+
+    # true if "private"
+    ... if is_private('_some_name');
+
+Ofttimes we need to determine if a name is considered "private" or not.  By convention,
+method, attribute, and other names are considered private if their first character is
+an underscore.
+
+While trivial to test for, this allows us to centralize the tests in one place.
+
 # SEE ALSO
 
 Please see those modules/websites for more information related to this module.
 
 - [Moose::Util](https://metacpan.org/pod/Moose::Util)
-
-# SOURCE
-
-The development version is on github at [http://https://github.com/RsrchBoy/moosex-util](http://https://github.com/RsrchBoy/moosex-util)
-and may be cloned from [git://https://github.com/RsrchBoy/moosex-util.git](git://https://github.com/RsrchBoy/moosex-util.git)
 
 # BUGS
 
@@ -76,7 +86,7 @@ Chris Weyl <cweyl@alumni.drew.edu>
 ## I'm a material boy in a material world
 
 <div>
-    <a href="https://www.gittip.com/RsrchBoy/"><img src="https://raw.githubusercontent.com/gittip/www.gittip.com/master/www/assets/%25version/logo.png" /></a>
+    <a href="https://gratipay.com/RsrchBoy/"><img src="http://img.shields.io/gratipay/RsrchBoy.svg" /></a>
     <a href="http://bit.ly/rsrchboys-wishlist"><img src="http://wps.io/wp-content/uploads/2014/05/amazon_wishlist.resized.png" /></a>
     <a href="https://flattr.com/submit/auto?user_id=RsrchBoy&url=https%3A%2F%2Fgithub.com%2FRsrchBoy%2Fmoosex-util&title=RsrchBoy's%20CPAN%20MooseX-Util&tags=%22RsrchBoy's%20MooseX-Util%20in%20the%20CPAN%22"><img src="http://api.flattr.com/button/flattr-badge-large.png" /></a>
 </div>
@@ -86,9 +96,9 @@ rather **it is simply a very pleasant surprise**. I largely create and release
 works like this because I need them or I find it enjoyable; however, don't let
 that stop you if you feel like it ;)
 
-[Flattr this](https://flattr.com/submit/auto?user_id=RsrchBoy&url=https%3A%2F%2Fgithub.com%2FRsrchBoy%2Fmoosex-util&title=RsrchBoy&#x27;s%20CPAN%20MooseX-Util&tags=%22RsrchBoy&#x27;s%20MooseX-Util%20in%20the%20CPAN%22),
-[gittip me](https://www.gittip.com/RsrchBoy/), or indulge my
-[Amazon Wishlist](http://bit.ly/rsrchboys-wishlist)...  If you so desire.
+[Flattr](https://flattr.com/submit/auto?user_id=RsrchBoy&url=https%3A%2F%2Fgithub.com%2FRsrchBoy%2Fmoosex-util&title=RsrchBoy&#x27;s%20CPAN%20MooseX-Util&tags=%22RsrchBoy&#x27;s%20MooseX-Util%20in%20the%20CPAN%22),
+[Gratipay](https://gratipay.com/RsrchBoy/), or indulge my
+[Amazon Wishlist](http://bit.ly/rsrchboys-wishlist)...  If and \*only\* if you so desire.
 
 # COPYRIGHT AND LICENSE
 
