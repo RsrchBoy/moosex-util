@@ -99,8 +99,12 @@ sub is_private($) {
     return;
 }
 
+sub find_meta { goto \&Moose::Util::find_meta }
+
 !!42;
 __END__
+
+=for Pod::Coverage find_meta
 
 =head1 SYNOPSIS
 
