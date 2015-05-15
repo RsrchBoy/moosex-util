@@ -2,6 +2,10 @@ Revision history for MooseX-Util
 
 {{$NEXT}}
 
+0.005     2015-05-15 09:38:31 PDT-0700
+	* add a stub find_meta...  ...as apparently a number of items calling this
+	  as MooseX::Util::find_meta() were breaking after the 0.004 changes.
+
 0.004     2015-05-07 21:58:06 PDT-0700
 	* add: is_private()
 
