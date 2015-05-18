@@ -3,7 +3,6 @@ requires "Moose" => "0";
 requires "Moose::Meta::Class" => "0";
 requires "Moose::Role" => "0";
 requires "Moose::Util" => "0";
-requires "MooseX::AttributeShortcuts" => "0";
 requires "MooseX::TraitFor::Meta::Class::BetterAnonClassNames" => "0.002001";
 requires "Sub::Exporter::Progressive" => "0";
 requires "namespace::autoclean" => "0";
