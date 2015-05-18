@@ -19,8 +19,8 @@ Calling this routine with no traits specified will simply return the name of
 the class.  This is not considered an error.
 
 Note that we handle being called directly against a package (e.g.
-C<MyClass->with_traits(...)>) and against an instance (e.g.
-C<$self->with_traits(...)>) identically; in each instance the class
+C<< MyClass->with_traits(...) >>) and against an instance (e.g.
+C<< $self->with_traits(...) >>) identically; in each instance the class
 referenced is subclassed.
 
 =cut
@@ -70,7 +70,7 @@ ONE TRUE NAME", it seems that most people tend to think of them this way:
 Roles are traits that a class knowingly consumes (e.g. via with()).
 
 Traits are roles that are applied without the class' consent (e.g. anonymous
-subclass composition or C<$trait_meta->apply('ClassThinger')>).
+subclass composition or C<< $trait_meta->apply('ClassThinger') >>).
 
 Or maybe that's just what this author is imposing on everyone else.  Either
 way, that's what we'll be using here if the definition ever becomes important.
