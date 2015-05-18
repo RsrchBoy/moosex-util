@@ -4,7 +4,6 @@ package MooseX::Traitor;
 
 use Moose::Role;
 use namespace::autoclean;
-use MooseX::AttributeShortcuts;
 use MooseX::Util ();
 
 =method with_traits(<trait1>, ...)

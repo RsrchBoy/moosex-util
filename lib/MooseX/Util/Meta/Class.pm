@@ -4,7 +4,6 @@ package MooseX::Util::Meta::Class;
 
 use Moose;
 use namespace::autoclean;
-use MooseX::AttributeShortcuts;
 
 extends 'Moose::Meta::Class';
 with 'MooseX::TraitFor::Meta::Class::BetterAnonClassNames';
