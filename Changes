@@ -1,6 +1,8 @@
 Revision history for MooseX-Util
 
 {{$NEXT}}
+
+0.006     2015-06-26 11:32:06 PDT-0700
 	* Drop MXAS, as we don't need it.
 
 0.005     2015-05-15 09:38:31 PDT-0700

@@ -1,7 +1,6 @@
 requires "Carp" => "0";
 requires "Moose" => "0";
 requires "Moose::Meta::Class" => "0";
-requires "Moose::Role" => "0";
 requires "Moose::Util" => "0";
 requires "MooseX::TraitFor::Meta::Class::BetterAnonClassNames" => "0.002001";
 requires "Sub::Exporter::Progressive" => "0";
@@ -15,6 +14,7 @@ on 'test' => sub {
   requires "File::Spec" => "0";
   requires "IO::Handle" => "0";
   requires "IPC::Open3" => "0";
+  requires "Moose::Role" => "0";
   requires "Test::CheckDeps" => "0.010";
   requires "Test::Moose::More" => "0.016";
   requires "Test::More" => "0.94";

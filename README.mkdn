@@ -8,7 +8,7 @@ MooseX::Util - Moose::Util extensions
 
 # VERSION
 
-This document describes version 0.006 of MooseX::Util - released May 17, 2015 as part of MooseX-Util.
+This document describes version 0.006 of MooseX::Util - released June 26, 2015 as part of MooseX-Util.
 
 # SYNOPSIS
 
